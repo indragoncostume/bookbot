@@ -17,7 +17,6 @@ def get_num_characters(words):
             characters[letter] += 1
     return characters
 
-def report(characters):
-    
-
-
+def sort_on(characters):
+    sortedbykey = {k: v for k, v in sorted(characters.items(), key= lambda v: v[1], reverse=True)}
+    return sortedbykey
